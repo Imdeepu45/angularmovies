@@ -1,0 +1,26 @@
+<form (ngSubmit)=onsubmit(x) #x="ngForm" >
+        <table class="table">
+          <tr>
+            <label>Name</label>
+            <td><input type="text" name="name" placeholder="Username" class="form-control" ngModel></td>
+          </tr>
+          
+      
+          <tr>
+            <td></td>
+            <td><button  type="submit" class="btn btn-primary">submit</button></td>
+          </tr>
+        </table>
+      
+      </form>
+      <table>
+      <div class="table">
+        <tr><th>movie</th><th>Actor</th><th>Actress</th><th>Director</th></tr>
+        <tr *bgFor="let data of mydata">
+          <td>{{data.movie}}</td>
+          <td>{{data.actor}}</td>
+          <td>{{data.actress}}</td>
+          <td>{{data.director}}</td>
+      </div>
+    </table>
+
